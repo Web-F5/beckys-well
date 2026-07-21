@@ -6,7 +6,7 @@ import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
 const inputClasses =
-  'w-full rounded-xl border border-border bg-white px-4 py-3 text-sm text-foreground outline-none transition-all focus:ring-2 focus:ring-[--color-brand]'
+  'w-full rounded-xl border border-border bg-white px-4 py-3 text-sm text-foreground outline-none transition-all focus:ring-2 focus:ring-(--color-brand)'
 
 export default function ContactForm() {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')

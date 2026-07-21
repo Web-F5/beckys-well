@@ -31,7 +31,7 @@ export default function ServiceCard({
       </div>
       <h3 className="font-heading text-lg font-bold text-foreground">{title}</h3>
       <p className="text-sm leading-relaxed text-muted-foreground">{short}</p>
-      <span className="mt-auto inline-flex items-center gap-1.5 text-sm font-semibold text-[--color-brand]">
+      <span className="mt-auto inline-flex items-center gap-1.5 text-sm font-semibold text-(--color-brand)">
         Learn more
         <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" />
       </span>

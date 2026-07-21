@@ -51,7 +51,7 @@ export default function BlogPage() {
                 </p>
                 <h2 className="font-heading text-lg font-extrabold text-foreground">{post.title}</h2>
                 <p className="text-sm leading-relaxed text-muted-foreground">{post.excerpt}</p>
-                <span className="mt-auto inline-flex items-center gap-1.5 pt-2 text-sm font-semibold text-[--color-brand]">
+                <span className="mt-auto inline-flex items-center gap-1.5 pt-2 text-sm font-semibold text-(--color-brand)">
                   Read more
                   <ArrowRight size={15} className="transition-transform group-hover:translate-x-1" />
                 </span>

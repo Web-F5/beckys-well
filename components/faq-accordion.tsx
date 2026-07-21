@@ -22,7 +22,7 @@ export default function FaqAccordion({ items }: { items: { q: string; a: string 
               <span className="font-heading text-base font-bold text-foreground">{item.q}</span>
               <ChevronDown
                 size={18}
-                className={cn('flex-shrink-0 text-[--color-brand] transition-transform', open && 'rotate-180')}
+                className={cn('flex-shrink-0 text-(--color-brand) transition-transform', open && 'rotate-180')}
               />
             </button>
             {open && (

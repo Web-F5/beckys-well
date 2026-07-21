@@ -31,7 +31,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <div className="mx-auto max-w-2xl">
           <Link
             href="/blog"
-            className="mb-8 inline-flex items-center gap-1.5 text-sm font-semibold text-[--color-brand]"
+            className="mb-8 inline-flex items-center gap-1.5 text-sm font-semibold text-(--color-brand)"
           >
             <ArrowLeft size={15} /> Back to Blog
           </Link>

@@ -21,7 +21,7 @@ export default function Navbar() {
             height={44}
             className="rounded-full object-cover"
           />
-          <span className="font-heading text-xl font-extrabold text-[--color-brand]">Becky&apos;s Well</span>
+          <span className="font-heading text-xl font-extrabold text-(--color-brand)">Becky&apos;s Well</span>
         </Link>
 
         <ul className="hidden items-center gap-7 lg:flex">
@@ -29,7 +29,7 @@ export default function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="font-heading text-sm font-semibold text-foreground/80 transition-colors hover:text-[--color-brand]"
+                className="font-heading text-sm font-semibold text-foreground/80 transition-colors hover:text-(--color-brand)"
               >
                 {link.label}
               </Link>
@@ -42,7 +42,7 @@ export default function Navbar() {
         </Link>
 
         <button
-          className="rounded-md p-2 text-[--color-brand] lg:hidden"
+          className="rounded-md p-2 text-(--color-brand) lg:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
         >
