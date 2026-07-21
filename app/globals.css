@@ -1,0 +1,89 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: 'Lato', 'Lato Fallback', sans-serif;
+  --font-heading: 'Nunito', 'Nunito Fallback', sans-serif;
+
+  /* Brand palette (Becky's Well brief) */
+  --color-brand: #ba886d;
+  --color-brand-bg: #ffe8d6;
+  --color-brand-surface-dark: #6b705c;
+  --color-brand-button: #cb997e;
+  --color-brand-button-hover: #d3a891;
+  --color-brand-accent: #a5a58d;
+  --color-brand-accent-hover: #b3b39e;
+  --color-brand-text-muted: #6b705c;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+}
+
+:root {
+  color-scheme: light;
+  --background: #fffaf5;
+  --foreground: #4a4638;
+  --card: #ffffff;
+  --card-foreground: #4a4638;
+  --popover: #ffffff;
+  --popover-foreground: #4a4638;
+  --primary: #ba886d;
+  --primary-foreground: #ffffff;
+  --secondary: #ffe8d6;
+  --secondary-foreground: #6b705c;
+  --muted: #f6ebe1;
+  --muted-foreground: #8a7f6c;
+  --accent: #a5a58d;
+  --accent-foreground: #ffffff;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #ecdccb;
+  --input: #ecdccb;
+  --ring: #cb997e;
+  --radius: 1rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Warm, hand-drawn ripple shapes used by PlaceholderImage */
+@keyframes ripple-drift {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(1%, -1.5%) scale(1.03); }
+  100% { transform: translate(0, 0) scale(1); }
+}
