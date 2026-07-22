@@ -14,7 +14,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-8">
         <Link href="/" className="flex items-center" onClick={() => setMobileOpen(false)}>
-          <Image src="/logo-full.webp" alt="Becky's Well" width={177} height={88} className="h-[88px] w-auto" priority />
+          <Image src="/logo-full.webp" alt="Becky's Well" width={141} height={70} className="h-[70px] w-auto" priority />
         </Link>
 
         <ul className="hidden items-center gap-7 lg:flex">

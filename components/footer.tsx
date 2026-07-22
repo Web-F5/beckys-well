@@ -12,8 +12,8 @@ export default function Footer() {
             <Image
               src="/logo-icon.webp"
               alt="Becky's Well logo"
-              width={88}
-              height={88}
+              width={70}
+              height={70}
               className="rounded-full object-cover"
             />
             <span className="font-heading text-lg font-extrabold">Becky&apos;s Well</span>
