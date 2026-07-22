@@ -8,12 +8,12 @@ export default function Footer() {
     <footer style={{ backgroundColor: 'var(--color-brand-surface-dark)' }} className="text-[#f3efe6]">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 py-14 md:grid-cols-2 md:px-8 lg:grid-cols-4">
         <div>
-          <div className="mb-4 flex items-center gap-3">
+          <div className="mb-4 flex items-center gap-4">
             <Image
-              src="/logo.jpg"
+              src="/logo-icon.webp"
               alt="Becky's Well logo"
-              width={44}
-              height={44}
+              width={88}
+              height={88}
               className="rounded-full object-cover"
             />
             <span className="font-heading text-lg font-extrabold">Becky&apos;s Well</span>

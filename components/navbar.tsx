@@ -13,15 +13,8 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-8">
-        <Link href="/" className="flex items-center gap-3" onClick={() => setMobileOpen(false)}>
-          <Image
-            src="/logo.jpg"
-            alt="Becky's Well logo"
-            width={44}
-            height={44}
-            className="rounded-full object-cover"
-          />
-          <span className="font-heading text-xl font-extrabold text-(--color-brand)">Becky&apos;s Well</span>
+        <Link href="/" className="flex items-center" onClick={() => setMobileOpen(false)}>
+          <Image src="/logo-full.webp" alt="Becky's Well" width={177} height={88} className="h-[88px] w-auto" priority />
         </Link>
 
         <ul className="hidden items-center gap-7 lg:flex">
