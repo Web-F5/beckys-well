@@ -7,15 +7,15 @@
   --font-sans: 'Lato', 'Lato Fallback', sans-serif;
   --font-heading: 'Nunito', 'Nunito Fallback', sans-serif;
 
-  /* Brand palette (Becky's Well brief) */
-  --color-brand: #ba886d;
-  --color-brand-bg: #ffe8d6;
-  --color-brand-surface-dark: #6b705c;
-  --color-brand-button: #cb997e;
-  --color-brand-button-hover: #d3a891;
-  --color-brand-accent: #a5a58d;
-  --color-brand-accent-hover: #b3b39e;
-  --color-brand-text-muted: #6b705c;
+  /* Brand palette — Well Water, less green (level 1) */
+  --color-brand: #3c5b75;
+  --color-brand-bg: #e5ddd0;
+  --color-brand-surface-dark: #3c5b75;
+  --color-brand-button: #3c5b75;
+  --color-brand-button-hover: #4c6d88;
+  --color-brand-accent: #55707d;
+  --color-brand-accent-hover: #6c8794;
+  --color-brand-text-muted: #55707d;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -43,24 +43,24 @@
 
 :root {
   color-scheme: light;
-  --background: #fffaf5;
-  --foreground: #4a4638;
+  --background: #fbf6f0;
+  --foreground: #252f46;
   --card: #ffffff;
-  --card-foreground: #4a4638;
+  --card-foreground: #252f46;
   --popover: #ffffff;
-  --popover-foreground: #4a4638;
-  --primary: #ba886d;
+  --popover-foreground: #252f46;
+  --primary: #3c5b75;
   --primary-foreground: #ffffff;
-  --secondary: #ffe8d6;
-  --secondary-foreground: #6b705c;
-  --muted: #f6ebe1;
-  --muted-foreground: #8a7f6c;
-  --accent: #a5a58d;
-  --accent-foreground: #ffffff;
+  --secondary: #e5ddd0;
+  --secondary-foreground: #3c5b75;
+  --muted: #e5ddd0;
+  --muted-foreground: #55707d;
+  --accent: #e5ddd0;
+  --accent-foreground: #3c5b75;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: #ecdccb;
-  --input: #ecdccb;
-  --ring: #cb997e;
+  --border: #d6cdc3;
+  --input: #d6cdc3;
+  --ring: #3c5b75;
   --radius: 1rem;
 }
 
