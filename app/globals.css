@@ -16,6 +16,8 @@
   --color-brand-accent: #55707d;
   --color-brand-accent-hover: #6c8794;
   --color-brand-text-muted: #55707d;
+  --color-brand-surface-alt: #ddcfc1;
+  --color-brand-warm-pop: #fbc79f;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);

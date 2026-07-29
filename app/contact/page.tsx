@@ -15,7 +15,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-3xl text-center">
           <span
             className="mb-5 inline-block rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-widest"
-            style={{ backgroundColor: 'var(--color-brand-bg)', color: 'var(--color-brand)' }}
+            style={{ backgroundColor: 'var(--color-brand-warm-pop)', color: 'var(--color-brand)' }}
           >
             Contact
           </span>
@@ -109,10 +109,10 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="px-4 pb-20 md:px-8">
+      <section className="px-4 py-16 md:px-8" style={{ backgroundColor: 'var(--color-brand-surface-alt)' }}>
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="mb-4 font-heading text-2xl font-extrabold text-foreground">Proudly Serving</h2>
-          <p className="leading-relaxed text-muted-foreground">{serviceAreaTowns.join(' · ')}</p>
+          <p className="leading-relaxed text-foreground/75">{serviceAreaTowns.join(' · ')}</p>
         </div>
       </section>
     </>

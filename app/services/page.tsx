@@ -18,7 +18,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-3xl text-center">
           <span
             className="mb-5 inline-block rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-widest"
-            style={{ backgroundColor: 'var(--color-brand-bg)', color: 'var(--color-brand)' }}
+            style={{ backgroundColor: 'var(--color-brand-warm-pop)', color: 'var(--color-brand)' }}
           >
             Our Services
           </span>

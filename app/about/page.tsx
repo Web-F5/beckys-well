@@ -23,7 +23,7 @@ export default function AboutPage() {
           <div className="flex flex-col gap-5">
             <span
               className="w-fit rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-widest"
-              style={{ backgroundColor: 'var(--color-brand-bg)', color: 'var(--color-brand)' }}
+              style={{ backgroundColor: 'var(--color-brand-warm-pop)', color: 'var(--color-brand)' }}
             >
               About Us
             </span>
@@ -65,7 +65,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="px-4 py-16 md:px-8" style={{ backgroundColor: 'var(--color-brand-bg)' }}>
+      <section className="px-4 py-16 md:px-8" style={{ backgroundColor: 'var(--color-brand-surface-alt)' }}>
         <div className="mx-auto max-w-6xl">
           <h2 className="mb-10 text-center font-heading text-2xl font-extrabold text-foreground md:text-3xl">
             What Guides Us
@@ -77,7 +77,7 @@ export default function AboutPage() {
                   <v.icon size={24} style={{ color: 'var(--color-brand)' }} />
                 </div>
                 <h3 className="font-heading text-lg font-bold text-foreground">{v.title}</h3>
-                <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">{v.body}</p>
+                <p className="max-w-xs text-sm leading-relaxed text-foreground/75">{v.body}</p>
               </div>
             ))}
           </div>

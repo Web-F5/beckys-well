@@ -14,7 +14,7 @@ export default function TestimonialsPage() {
         <div className="mx-auto max-w-3xl text-center">
           <span
             className="mb-5 inline-block rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-widest"
-            style={{ backgroundColor: 'var(--color-brand-bg)', color: 'var(--color-brand)' }}
+            style={{ backgroundColor: 'var(--color-brand-warm-pop)', color: 'var(--color-brand)' }}
           >
             Testimonials
           </span>
@@ -29,14 +29,14 @@ export default function TestimonialsPage() {
         </div>
       </section>
 
-      <section className="px-4 pb-20 md:px-8">
+      <section className="px-4 py-16 md:px-8" style={{ backgroundColor: 'var(--color-brand-surface-alt)' }}>
         <div className="mx-auto grid max-w-5xl gap-6 sm:grid-cols-3">
           {[1, 2, 3].map((i) => (
             <div
               key={i}
-              className="flex flex-col items-center gap-4 rounded-3xl border-2 border-dashed border-border p-8 text-center"
+              className="flex flex-col items-center gap-4 rounded-3xl border-2 border-dashed border-border bg-card p-8 text-center"
             >
-              <Quote size={28} style={{ color: 'var(--color-brand-accent)' }} />
+              <Quote size={28} style={{ color: 'var(--color-brand-warm-pop)' }} />
               <p className="text-sm leading-relaxed text-muted-foreground">
                 A client testimonial will appear here once shared with us and permission is given to publish it.
               </p>

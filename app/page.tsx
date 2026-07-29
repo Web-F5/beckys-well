@@ -1,6 +1,6 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { Compass, HeartHandshake, ShieldCheck, Sparkles, Users } from 'lucide-react'
-import PlaceholderImage from '@/components/placeholder-image'
 import ServiceCard from '@/components/service-card'
 import CtaSection from '@/components/cta-section'
 import { buttonVariants } from '@/components/ui/button'
@@ -16,7 +16,7 @@ export default function HomePage() {
           <div className="flex flex-col gap-6">
             <span
               className="w-fit rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-widest"
-              style={{ backgroundColor: 'var(--color-brand-bg)', color: 'var(--color-brand)' }}
+              style={{ backgroundColor: 'var(--color-brand-warm-pop)', color: 'var(--color-brand)' }}
             >
               Shepparton & Greater Shepparton
             </span>
@@ -40,11 +40,18 @@ export default function HomePage() {
               Self-referrals welcome · No cost should stop you reaching out · Member of {org.membership}
             </p>
           </div>
-          <PlaceholderImage tone="warm" className="aspect-[4/3] w-full" />
+          <Image
+            src="/hero-photo.webp"
+            alt="A woman sitting by a window with a cup of tea, looking out thoughtfully"
+            width={1400}
+            height={1056}
+            className="aspect-[4/3] w-full rounded-3xl object-cover"
+            priority
+          />
         </div>
       </section>
 
-      <section className="px-4 py-12 md:px-8" style={{ backgroundColor: 'var(--color-brand-bg)' }}>
+      <section className="px-4 py-12 md:px-8" style={{ backgroundColor: 'var(--color-brand-surface-alt)' }}>
         <div className="mx-auto grid max-w-6xl gap-8 sm:grid-cols-3">
           {[
             { icon: ShieldCheck, title: 'Confidential', body: 'What you share with us stays between us.' },
@@ -57,7 +64,7 @@ export default function HomePage() {
               </div>
               <div>
                 <h3 className="font-heading text-base font-bold text-foreground">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.body}</p>
+                <p className="text-sm text-foreground/75">{item.body}</p>
               </div>
             </div>
           ))}
@@ -89,12 +96,15 @@ export default function HomePage() {
       </section>
 
       <section className="px-4 pb-20 md:px-8">
-        <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 rounded-3xl border border-border p-10 text-center md:p-14 lg:flex-row lg:text-left">
+        <div
+          className="mx-auto flex max-w-6xl flex-col items-center gap-8 rounded-3xl p-10 text-center md:p-14 lg:flex-row lg:text-left"
+          style={{ backgroundColor: 'var(--color-brand-surface-alt)' }}
+        >
           <div className="flex-1">
             <h2 className="mb-3 text-balance font-heading text-2xl font-extrabold text-foreground md:text-3xl">
               Supporting the Greater Shepparton region
             </h2>
-            <p className="leading-relaxed text-muted-foreground">
+            <p className="leading-relaxed text-foreground/75">
               We welcome clients from Shepparton, Mooroopna, Kialla, Tatura and surrounding towns within 30km,
               with support also available online for anyone further afield.
             </p>

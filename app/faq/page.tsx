@@ -15,7 +15,7 @@ export default function FaqPage() {
         <div className="mx-auto max-w-3xl text-center">
           <span
             className="mb-5 inline-block rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-widest"
-            style={{ backgroundColor: 'var(--color-brand-bg)', color: 'var(--color-brand)' }}
+            style={{ backgroundColor: 'var(--color-brand-warm-pop)', color: 'var(--color-brand)' }}
           >
             FAQ
           </span>
@@ -35,7 +35,7 @@ export default function FaqPage() {
         </div>
       </section>
 
-      <section className="px-4 pb-20 md:px-8">
+      <section className="px-4 py-16 md:px-8" style={{ backgroundColor: 'var(--color-brand-surface-alt)' }}>
         <div className="mx-auto max-w-3xl">
           <h2 className="mb-5 font-heading text-xl font-extrabold text-foreground">For Partners &amp; Men</h2>
           <FaqAccordion items={faqs.partners} />
