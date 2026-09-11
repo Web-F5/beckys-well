@@ -15,9 +15,11 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
           <div className="flex flex-col gap-6">
             <h1 className="text-balance font-heading text-4xl font-extrabold leading-tight text-foreground md:text-5xl">
-              Becky&apos;s Well is here to walk with you through life&apos;s hardest moments — providing
-              compassionate, practical support, and a safe place to heal.
+              Becky&apos;s Well is here to walk with you through life&apos;s hardest moments.
             </h1>
+            <p className="text-xl font-heading font-semibold text-foreground md:text-2xl">
+              Providing compassionate, practical support, and a safe place to heal.
+            </p>
             <p className="max-w-lg text-lg leading-relaxed text-muted-foreground">
               Facing an unplanned pregnancy or pregnancy loss can feel overwhelming. We provide confidential,
               non-judgmental support for anyone affected by unplanned pregnancy, miscarriage, or abortion. Offering
@@ -32,7 +34,7 @@ export default function HomePage() {
               </Link>
             </div>
             <p className="text-sm text-muted-foreground">
-              Self-referrals welcome · No cost should stop you reaching out · Member of {org.membership}
+              Self-referrals welcome · No cost should stop you reaching out · {org.affiliation}
             </p>
           </div>
           <Image
