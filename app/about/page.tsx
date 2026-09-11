@@ -25,7 +25,7 @@ export default function AboutPage() {
               className="w-fit rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-widest"
               style={{ backgroundColor: 'var(--color-brand-warm-pop)', color: 'var(--color-brand)' }}
             >
-              About Us
+              Shepparton & Greater Shepparton
             </span>
             <h1 className="text-balance font-heading text-4xl font-extrabold leading-tight text-foreground md:text-5xl">
               A well is a quiet place to draw from

@@ -14,19 +14,14 @@ export default function HomePage() {
       <section className="px-4 pb-16 pt-14 md:px-8 md:pb-24 md:pt-20">
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
           <div className="flex flex-col gap-6">
-            <span
-              className="w-fit rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-widest"
-              style={{ backgroundColor: 'var(--color-brand-warm-pop)', color: 'var(--color-brand)' }}
-            >
-              Shepparton & Greater Shepparton
-            </span>
             <h1 className="text-balance font-heading text-4xl font-extrabold leading-tight text-foreground md:text-5xl">
-              You don&apos;t have to face this alone
+              Becky&apos;s Well is here to walk with you through life&apos;s hardest moments — providing
+              compassionate, practical support, and a safe place to heal.
             </h1>
             <p className="max-w-lg text-lg leading-relaxed text-muted-foreground">
-              Becky&apos;s Well offers confidential, non-judgemental support for anyone affected by an unplanned
-              pregnancy, miscarriage, or who needs post-abortion support. Options information, life coaching and
-              referrals — at your pace, on your terms.
+              Facing an unplanned pregnancy or pregnancy loss can feel overwhelming. We provide confidential,
+              non-judgmental support for anyone affected by unplanned pregnancy, miscarriage, or abortion. Offering
+              options information, life coaching, and referrals — at a pace that feels comfortable for you.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className={buttonVariants({ size: 'lg' })}>

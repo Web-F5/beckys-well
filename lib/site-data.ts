@@ -8,6 +8,7 @@ export const org = {
   suburb: 'Shepparton',
   region: 'Greater Shepparton, Victoria',
   membership: 'Pregnancy Help Australia',
+  affiliation: 'Becky\'s Well is an affiliate of Pregnancy Help Australia (PHA) and Encounter Christian Church.',
   facebook: 'https://www.facebook.com',
   founder: 'Hermes Valle Villanueva',
   hours: [
@@ -72,7 +73,7 @@ export const faqs = {
   general: [
     {
       q: 'Is this service confidential?',
-      a: "Yes. Everything you share with us is confidential. You're welcome to reach out on your own terms, and nothing is shared without your consent.",
+      a: "Yes, this is a confidential service. You're welcome to reach out whenever you feel ready, and we only share information if someone's safety is at risk or if we're legally required to do so.",
     },
     {
       q: 'Do I need a referral to come to Becky\'s Well?',
@@ -88,11 +89,15 @@ export const faqs = {
     },
     {
       q: 'What does it cost?',
-      a: "Get in touch and we'll talk you through this — we don't want cost to be a barrier to reaching out.",
+      a: 'Becky\'s Well is a free service. There is no cost to seek support.',
     },
     {
       q: 'Do you offer support online?',
       a: 'Yes. Alongside in-person appointments at our Shepparton premises, we also offer support online for anyone in our service area or beyond who prefers to connect remotely.',
+    },
+    {
+      q: "Is Becky's Well a replacement for professional services?",
+      a: "Becky's Well is a non-clinical support service. It isn't a replacement for professional medical advice, legal counsel, or other professional services — please don't disregard or delay professional advice because of information or guidance from us. As a non-clinical service, we also don't provide or refer for abortion procedures, as this is outside our scope; that care needs to come from a medical practitioner.",
     },
   ],
   partners: [
