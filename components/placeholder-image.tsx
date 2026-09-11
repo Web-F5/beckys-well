@@ -5,9 +5,9 @@ import { cn } from '@/lib/utils'
 type Tone = 'warm' | 'soft' | 'sage'
 
 const tones: Record<Tone, { from: string; via: string; to: string; ring: string }> = {
-  warm: { from: '#e5ddd0', via: '#919ca3', to: '#667c8c', ring: '#3c5b75' },
-  soft: { from: '#fbf6f0', via: '#e5ddd0', to: '#667c8c', ring: '#3c5b75' },
-  sage: { from: '#ddcfc1', via: '#8d959b', to: '#647888', ring: '#3c5b75' },
+  warm: { from: '#e5ddd0', via: '#f0d2b8', to: '#f4ceae', ring: '#3a241a' },
+  soft: { from: '#fbf6f0', via: '#e5ddd0', to: '#f4ceae', ring: '#3a241a' },
+  sage: { from: '#ddcfc1', via: '#cebdac', to: '#c8b5a4', ring: '#3a241a' },
 }
 
 export default function PlaceholderImage({
