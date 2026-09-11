@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Calendar, Mail, MapPin, Phone, Share2 } from 'lucide-react'
+import { Calendar, Mail, MapPin, Phone, Share2, Users } from 'lucide-react'
 import ContactForm from '@/components/contact-form'
 import { org, serviceAreaTowns } from '@/lib/site-data'
 
@@ -94,6 +94,37 @@ export default function ContactPage() {
           </div>
 
           <ContactForm />
+        </div>
+      </section>
+
+      <section className="px-4 pb-16 md:px-8">
+        <div className="mx-auto max-w-3xl text-center">
+          <div
+            className="mx-auto mb-5 flex size-12 items-center justify-center rounded-2xl"
+            style={{ backgroundColor: 'var(--color-brand-bg)' }}
+          >
+            <Users size={22} style={{ color: 'var(--color-brand)' }} strokeWidth={1.75} />
+          </div>
+          <h2 className="mb-5 font-heading text-2xl font-extrabold text-foreground md:text-3xl">
+            Supporting Someone in Your Community
+          </h2>
+          <div className="flex flex-col gap-4 text-left text-base leading-relaxed text-muted-foreground">
+            <p>
+              If your friend, family member, neighbour, or client is pregnant and you feel she might need a
+              little extra support, Becky&apos;s Well is here to walk alongside both of you.
+            </p>
+            <p>
+              When someone is facing an unexpected or difficult pregnancy, it can feel overwhelming — not just
+              for her, but for the people who care about her too. You might be unsure what to say, how to help,
+              or where to start. That&apos;s completely normal.
+            </p>
+            <p>
+              As part of the Pregnancy Help Australia network, we offer a calm, confidential, and non-judgmental
+              space where she can talk openly, explore her options, and connect with practical community
+              resources. You can gently share our details with her so she can reach out whenever she&apos;s
+              ready.
+            </p>
+          </div>
         </div>
       </section>
 
