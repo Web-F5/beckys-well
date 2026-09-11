@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { Compass, HeartHandshake, Sparkles, Users } from 'lucide-react'
-import PlaceholderImage from '@/components/placeholder-image'
 import CtaSection from '@/components/cta-section'
 import { services } from '@/lib/site-data'
 
@@ -10,6 +10,13 @@ export const metadata: Metadata = {
 }
 
 const icons = [Compass, Sparkles, Users, HeartHandshake]
+
+const serviceImages = [
+  { src: '/images/girl-laptop.webp', alt: 'A woman looking thoughtfully at her laptop', width: 1920, height: 1080 },
+  { src: '/images/Shell-on-beach.webp', alt: 'A delicate shell resting on the sand at sunset', width: 800, height: 1067 },
+  { src: '/images/sunset-beach.webp', alt: 'A wide, calm horizon over the ocean at sunset', width: 1920, height: 1080 },
+  { src: '/images/Girl-thinking-headphones.webp', alt: 'A woman resting quietly on a couch, wrapped in a blanket', width: 1920, height: 1080 },
+]
 
 export default function ServicesPage() {
   return (
@@ -42,7 +49,13 @@ export default function ServicesPage() {
                 id={service.slug}
                 className={`grid scroll-mt-24 items-center gap-10 md:grid-cols-2 ${reversed ? 'md:[&>*:first-child]:order-2' : ''}`}
               >
-                <PlaceholderImage tone={i % 3 === 0 ? 'warm' : i % 3 === 1 ? 'soft' : 'sage'} icon={Icon} className="aspect-[5/4] w-full" />
+                <Image
+                  src={serviceImages[i].src}
+                  alt={serviceImages[i].alt}
+                  width={serviceImages[i].width}
+                  height={serviceImages[i].height}
+                  className="aspect-[5/4] w-full rounded-3xl object-cover"
+                />
                 <div>
                   <div
                     className="mb-4 flex size-12 items-center justify-center rounded-2xl"

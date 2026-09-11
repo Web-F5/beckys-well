@@ -38,10 +38,10 @@ export default function HomePage() {
             </p>
           </div>
           <Image
-            src="/hero-photo.webp"
+            src="/images/girl-with-cuppa.webp"
             alt="A woman sitting by a window with a cup of tea, looking out thoughtfully"
-            width={1400}
-            height={1056}
+            width={1920}
+            height={1080}
             className="aspect-[4/3] w-full rounded-3xl object-cover"
             priority
           />

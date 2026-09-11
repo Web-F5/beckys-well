@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Droplet } from 'lucide-react'
 import PlaceholderImage from '@/components/placeholder-image'
@@ -38,11 +39,21 @@ export default function BlogPage() {
               href={`/blog/${post.slug}`}
               className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
             >
-              <PlaceholderImage
-                tone={i % 3 === 0 ? 'warm' : i % 3 === 1 ? 'soft' : 'sage'}
-                icon={Droplet}
-                className="aspect-[16/10] w-full rounded-none"
-              />
+              {post.slug === 'coping-after-pregnancy-loss' ? (
+                <Image
+                  src="/images/woman-at-stream.webp"
+                  alt="A woman sitting quietly by a stream"
+                  width={800}
+                  height={1067}
+                  className="aspect-[16/10] w-full object-cover"
+                />
+              ) : (
+                <PlaceholderImage
+                  tone={i % 3 === 0 ? 'warm' : i % 3 === 1 ? 'soft' : 'sage'}
+                  icon={Droplet}
+                  className="aspect-[16/10] w-full rounded-none"
+                />
+              )}
               <div className="flex flex-1 flex-col gap-2 p-6">
                 <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
                   {new Date(post.date).toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })}

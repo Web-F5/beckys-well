@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowLeft, Droplet } from 'lucide-react'
@@ -35,6 +36,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           >
             <ArrowLeft size={15} /> Back to Blog
           </Link>
+          {post.slug === 'coping-after-pregnancy-loss' ? (
+            <Image
+              src="/images/woman-at-stream.webp"
+              alt="A woman sitting quietly by a stream"
+              width={800}
+              height={1067}
+              className="mb-8 aspect-[16/9] w-full rounded-3xl object-cover"
+            />
+          ) : (
+            <PlaceholderImage tone="soft" icon={Droplet} className="mb-8 aspect-[16/9] w-full" />
+          )}
           <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
             {new Date(post.date).toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })}
             {' · '}
@@ -43,7 +55,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <h1 className="mb-8 text-balance font-heading text-3xl font-extrabold leading-tight text-foreground md:text-4xl">
             {post.title}
           </h1>
-          <PlaceholderImage tone="soft" icon={Droplet} className="mb-10 aspect-[16/9] w-full" />
           <div className="flex flex-col gap-5 text-base leading-relaxed text-foreground/90">
             {post.content.map((paragraph, i) => (
               <p key={i}>{paragraph}</p>

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
-import { Droplet, HeartHandshake, ShieldCheck, Sparkles } from 'lucide-react'
-import PlaceholderImage from '@/components/placeholder-image'
+import Image from 'next/image'
+import { HeartHandshake, ShieldCheck, Sparkles } from 'lucide-react'
 import CtaSection from '@/components/cta-section'
 import { org } from '@/lib/site-data'
 
@@ -36,7 +36,13 @@ export default function AboutPage() {
               That&apos;s what we hope to offer everyone who reaches out to us.
             </p>
           </div>
-          <PlaceholderImage tone="soft" icon={Droplet} className="aspect-[4/3] w-full" />
+          <Image
+            src="/images/about-us-ripple.webp"
+            alt="Sunlight rippling across still water"
+            width={1920}
+            height={1080}
+            className="aspect-[4/3] w-full rounded-3xl object-cover"
+          />
         </div>
       </section>
 
