@@ -2,9 +2,9 @@ export const org = {
   name: "Becky's Well",
   tagline: 'A place to pause, breathe, and find clarity',
   email: 'beckyswell@outlook.com',
-  phone: '0419 971 495',
-  phoneHref: 'tel:0419971495',
-  address: 'Marungi Street, Shepparton, VIC 3630',
+  phone: '0414 505 474',
+  phoneHref: 'tel:0414505474',
+  address: 'Shepparton, Victoria',
   suburb: 'Shepparton',
   region: 'Greater Shepparton, Victoria',
   membership: 'Pregnancy Help Australia',
@@ -16,8 +16,6 @@ export const org = {
     { label: 'Saturday', value: 'Closed' },
     { label: 'Sunday', value: 'Closed' },
   ],
-  mapEmbedSrc:
-    'https://www.google.com/maps?q=Marungi+Street,+Shepparton,+VIC+3630,+Australia&output=embed',
 }
 
 export const navLinks = [
@@ -25,7 +23,6 @@ export const navLinks = [
   { label: 'About', href: '/about' },
   { label: 'Services', href: '/services' },
   { label: 'FAQ', href: '/faq' },
-  { label: 'Testimonials', href: '/testimonials' },
   { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ]

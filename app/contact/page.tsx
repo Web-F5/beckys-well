@@ -97,18 +97,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="px-4 pb-20 md:px-8">
-        <div className="mx-auto max-w-6xl overflow-hidden rounded-3xl border border-border">
-          <iframe
-            title="Becky's Well location map"
-            src={org.mapEmbedSrc}
-            className="h-80 w-full md:h-96"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
-      </section>
-
       <section className="px-4 py-16 md:px-8" style={{ backgroundColor: 'var(--color-brand-surface-alt)' }}>
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="mb-4 font-heading text-2xl font-extrabold text-foreground">Proudly Serving</h2>
