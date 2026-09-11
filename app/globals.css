@@ -8,14 +8,14 @@
   --font-heading: 'Nunito', 'Nunito Fallback', sans-serif;
 
   /* Brand palette — Greige & Peach (client mockup) */
-  --color-brand: #3a241a;
+  --color-brand: #3a3a3a;
   --color-brand-bg: #e5ddd0;
   --color-brand-surface-dark: #bfaa97;
   --color-brand-button: #fbc79f;
   --color-brand-button-hover: #ffd6ae;
   --color-brand-accent: #bfaa97;
   --color-brand-accent-hover: #cbb9a8;
-  --color-brand-text-muted: #6b5d4f;
+  --color-brand-text-muted: #6b6b6b;
   --color-brand-surface-alt: #ddcfc1;
   --color-brand-warm-pop: #fbc79f;
 
@@ -46,19 +46,19 @@
 :root {
   color-scheme: light;
   --background: #fbf6f0;
-  --foreground: #3a241a;
+  --foreground: #3a3a3a;
   --card: #ffffff;
-  --card-foreground: #3a241a;
+  --card-foreground: #3a3a3a;
   --popover: #ffffff;
-  --popover-foreground: #3a241a;
+  --popover-foreground: #3a3a3a;
   --primary: #fbc79f;
-  --primary-foreground: #3a241a;
+  --primary-foreground: #3a3a3a;
   --secondary: #e5ddd0;
-  --secondary-foreground: #3a241a;
+  --secondary-foreground: #3a3a3a;
   --muted: #e5ddd0;
-  --muted-foreground: #6b5d4f;
+  --muted-foreground: #6b6b6b;
   --accent: #e5ddd0;
-  --accent-foreground: #3a241a;
+  --accent-foreground: #3a3a3a;
   --destructive: oklch(0.577 0.245 27.325);
   --border: #d6cdc3;
   --input: #d6cdc3;
