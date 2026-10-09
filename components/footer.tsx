@@ -22,7 +22,7 @@ export default function Footer() {
             Confidential support for anyone facing an unplanned pregnancy, pregnancy loss, or post-abortion
             recovery across Greater Shepparton.
           </p>
-          <p className="text-xs text-[#f3efe6]/75">{org.affiliation}</p>
+          <p className="text-sm leading-relaxed text-[#f3efe6]/75">{org.affiliation}</p>
         </div>
 
         <div>
