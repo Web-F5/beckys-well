@@ -6,7 +6,7 @@ import { navLinks, org } from '@/lib/site-data'
 export default function Footer() {
   return (
     <footer style={{ backgroundColor: 'var(--color-brand-surface-dark)' }} className="text-[#3a3a3a]">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 py-14 md:grid-cols-2 md:px-8 lg:grid-cols-4">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 py-14 md:grid-cols-2 md:px-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.5fr)_minmax(0,0.95fr)_minmax(0,1.7fr)] lg:gap-8">
         <div>
           <div className="mb-4 flex items-center gap-4">
             <Image
@@ -70,7 +70,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="self-start rounded-2xl bg-[#fbf6f0] p-6 shadow-sm">
+        <div className="self-start rounded-2xl bg-[#fbf6f0] p-6 shadow-sm lg:-mt-6">
           <h3 className="mb-4 font-heading text-sm font-bold uppercase tracking-widest text-[#3a3a3a]">
             For immediate support
           </h3>
