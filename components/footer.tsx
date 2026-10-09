@@ -6,7 +6,7 @@ import { navLinks, org } from '@/lib/site-data'
 export default function Footer() {
   return (
     <footer style={{ backgroundColor: 'var(--color-brand-surface-dark)' }} className="text-[#f3efe6]">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 py-14 md:grid-cols-2 md:px-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.5fr)_minmax(0,0.95fr)_minmax(0,1.7fr)] lg:gap-8">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 py-14 md:grid-cols-2 md:px-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.5fr)_minmax(0,0.95fr)_minmax(0,20rem)] lg:gap-8">
         <div>
           <div className="mb-4 flex items-center gap-4">
             <Image
@@ -70,11 +70,11 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="self-start rounded-2xl bg-[#fbf6f0] p-6 shadow-sm lg:-mt-6">
-          <h3 className="mb-4 font-heading text-sm font-bold uppercase tracking-widest text-foreground">
+        <div className="self-start rounded-2xl bg-[#fbf6f0] p-5 shadow-sm lg:-mt-5">
+          <h3 className="mb-3 font-heading text-sm font-bold uppercase tracking-widest text-foreground">
             For immediate support
           </h3>
-          <div className="flex flex-col gap-3 text-sm leading-relaxed text-foreground">
+          <div className="flex flex-col gap-2.5 text-sm leading-relaxed text-foreground">
             <p>
               <span className="font-bold">Pregnancy Help Australia Helpline:</span>
               <br />
