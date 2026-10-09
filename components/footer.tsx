@@ -76,7 +76,7 @@ export default function Footer() {
           </h3>
           <div className="flex flex-col gap-3 text-sm leading-relaxed text-foreground">
             <p>
-              <span className="font-bold">Pregnancy Help Australia National Helpline:</span>{' '}
+              <span className="font-bold">Pregnancy Help Australia Helpline:</span>{' '}
               <a href="tel:1300139313" className="font-bold underline">
                 1300 139 313
               </a>
@@ -88,9 +88,15 @@ export default function Footer() {
               </a>{' '}
               (text only)
             </p>
-            <p>Free, Compassionate and Confidential support 8am-10pm AEST, 7 days</p>
             <p>
-              If you need immediate support, Lifeline is available 24/7 on{' '}
+              Free, Compassionate and Confidential support:
+              <br />
+              8am-10pm AEST, 7 days
+            </p>
+            <p>
+              If you need immediate support:
+              <br />
+              Lifeline is available 24/7 on{' '}
               <a href="tel:131114" className="font-bold underline">
                 13&nbsp;11&nbsp;14
               </a>

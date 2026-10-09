@@ -130,14 +130,14 @@ export default function ContactPage() {
               connect with someone closer to home.
             </p>
             <p>
-              Pregnancy Help Australia has a list of services across Australia on{' '}
+              A list of services are available across Australia on the{' '}
               <a
                 href="https://www.pregnancyhelpaustralia.org.au/about-us/our-network"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold text-foreground underline underline-offset-4"
               >
-                their website
+                Pregnancy Help Australia website
               </a>
               .
             </p>
