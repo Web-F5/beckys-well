@@ -96,8 +96,8 @@ export default function AboutPage() {
             A Note From Our Founder
           </h2>
           <p className="mx-auto max-w-xl leading-relaxed text-muted-foreground">
-            Becky&apos;s Well was founded by {org.founder} in 2026, out of a belief that everyone facing an
-            unplanned pregnancy or pregnancy loss deserves somewhere warm, honest and judgement-free to turn.
+            Becky&apos;s Well was founded out of a belief that everyone facing an unplanned pregnancy or
+            pregnancy loss, deserves somewhere warm, honest and judgement-free to turn to.
           </p>
         </div>
       </section>

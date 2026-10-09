@@ -10,7 +10,6 @@ export const org = {
   membership: 'Pregnancy Help Australia',
   affiliation: 'Becky\'s Well is an affiliate of Pregnancy Help Australia (PHA) and Encounter Christian Church.',
   facebook: 'https://www.facebook.com/profile.php?id=61582307387153',
-  founder: 'Hermes Valle Villanueva',
   hours: [
     { label: 'Monday – Friday', value: 'By appointment' },
     { label: 'Saturday', value: 'Closed' },
