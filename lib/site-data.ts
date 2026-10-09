@@ -57,14 +57,6 @@ export const services = [
   },
 ]
 
-export const serviceAreaTowns = [
-  'Shepparton', 'Mooroopna', 'Kialla', 'Merkel Nook', 'Shepparton East', 'Central Kialla',
-  'Congupna', 'Kialla West', 'Mooroopna North', 'Pine Lodge', 'Toolamba', 'Tallygaroopna',
-  'Old Toolamba', 'Tatura', 'Undera', 'Karramomus', 'Byrneside', 'Arcadia', 'Cosgrove',
-  'Katandra West', 'Caniambo', 'Merrigum', 'Harston', 'Marungi', 'Lancaster', 'Wunghnu',
-  'St Germains', 'Drumanure', 'Mundoona', 'Miepoll',
-]
-
 export const faqs = {
   general: [
     {

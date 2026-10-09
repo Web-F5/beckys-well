@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Calendar, Mail, MapPin, Phone, Share2, Users } from 'lucide-react'
 import ContactForm from '@/components/contact-form'
-import { org, serviceAreaTowns } from '@/lib/site-data'
+import { org } from '@/lib/site-data'
 
 export const metadata: Metadata = {
   title: "Contact Us | Becky's Well",
@@ -47,7 +47,7 @@ export default function ContactPage() {
             </a>
 
             <a href={`mailto:${org.email}`} className="flex items-center gap-4 rounded-2xl border border-border bg-card p-5">
-              <div className="flex size-12 flex-shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: 'var(--color-brand-bg)' }}>
+              <div className="flex size-12 flex-shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: 'var(--color-brand-warm-pop)' }}>
                 <Mail size={20} style={{ color: 'var(--color-brand)' }} />
               </div>
               <div>
@@ -57,7 +57,7 @@ export default function ContactPage() {
             </a>
 
             <div className="flex items-center gap-4 rounded-2xl border border-border bg-card p-5">
-              <div className="flex size-12 flex-shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: 'var(--color-brand-bg)' }}>
+              <div className="flex size-12 flex-shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: 'var(--color-brand-warm-pop)' }}>
                 <MapPin size={20} style={{ color: 'var(--color-brand)' }} />
               </div>
               <div>
@@ -67,7 +67,7 @@ export default function ContactPage() {
             </div>
 
             <div className="flex items-start gap-4 rounded-2xl border border-border bg-card p-5">
-              <div className="flex size-12 flex-shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: 'var(--color-brand-bg)' }}>
+              <div className="flex size-12 flex-shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: 'var(--color-brand-warm-pop)' }}>
                 <Calendar size={20} style={{ color: 'var(--color-brand)' }} />
               </div>
               <div>
@@ -86,7 +86,7 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="flex items-center gap-4 rounded-2xl border border-border bg-card p-5"
             >
-              <div className="flex size-12 flex-shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: 'var(--color-brand-bg)' }}>
+              <div className="flex size-12 flex-shrink-0 items-center justify-center rounded-xl" style={{ backgroundColor: 'var(--color-brand-warm-pop)' }}>
                 <Share2 size={20} style={{ color: 'var(--color-brand)' }} />
               </div>
               <p className="font-heading text-sm font-bold text-foreground">Follow us on Facebook</p>
@@ -101,7 +101,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-3xl text-center">
           <div
             className="mx-auto mb-5 flex size-12 items-center justify-center rounded-2xl"
-            style={{ backgroundColor: 'var(--color-brand-bg)' }}
+            style={{ backgroundColor: 'var(--color-brand-warm-pop)' }}
           >
             <Users size={22} style={{ color: 'var(--color-brand)' }} strokeWidth={1.75} />
           </div>
@@ -148,7 +148,10 @@ export default function ContactPage() {
       <section className="px-4 py-16 md:px-8" style={{ backgroundColor: 'var(--color-brand-surface-alt)' }}>
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="mb-4 font-heading text-2xl font-extrabold text-foreground">Proudly Serving</h2>
-          <p className="leading-relaxed text-foreground/75">{serviceAreaTowns.join(' · ')}</p>
+          <p className="leading-relaxed text-foreground/75">
+            Greater Shepparton and surrounding areas within 40km, with support also available online for anyone
+            further afield.
+          </p>
         </div>
       </section>
     </>

@@ -102,8 +102,8 @@ export default function HomePage() {
               Supporting the Greater Shepparton region
             </h2>
             <p className="leading-relaxed text-foreground/75">
-              We welcome clients from Shepparton, Mooroopna, Kialla, Tatura and surrounding towns within 30km,
-              with support also available online for anyone further afield.
+              We welcome clients from Greater Shepparton and surrounding areas within 40km, with support also
+              available online for anyone further afield.
             </p>
           </div>
           <Link href="/contact" className={buttonVariants({ variant: 'outline', size: 'lg' })}>
