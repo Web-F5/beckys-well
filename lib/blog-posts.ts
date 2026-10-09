@@ -21,7 +21,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'what-to-expect-first-appointment',
     image: {
       src: '/images/what-to-expect-at-your-first-appointment.webp',
-      alt: 'A calendar with an appointment circled in pink marker',
+      alt: 'A calendar with an appointment circled in lavender marker',
       width: 1920,
       height: 1080,
     },
