@@ -94,8 +94,6 @@ export default function Footer() {
               8am-10pm AEST, 7 days
             </p>
             <p>
-              If you need immediate support:
-              <br />
               Lifeline is available 24/7 on{' '}
               <a href="tel:131114" className="font-bold underline">
                 13&nbsp;11&nbsp;14
