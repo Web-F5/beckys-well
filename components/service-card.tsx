@@ -25,7 +25,7 @@ export default function ServiceCard({
     >
       <div
         className="flex size-12 items-center justify-center rounded-2xl"
-        style={{ backgroundColor: 'var(--color-brand-bg)' }}
+        style={{ backgroundColor: 'var(--color-brand-warm-pop)' }}
       >
         <Icon size={22} style={{ color: 'var(--color-brand)' }} strokeWidth={1.75} />
       </div>

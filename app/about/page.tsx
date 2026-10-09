@@ -79,10 +79,7 @@ export default function AboutPage() {
           <div className="grid gap-8 sm:grid-cols-3">
             {values.map((v) => (
               <div key={v.title} className="flex flex-col items-center gap-3 text-center">
-                <div
-                  className="flex size-14 items-center justify-center rounded-full"
-                  style={{ backgroundColor: 'var(--color-brand-warm-pop)' }}
-                >
+                <div className="flex size-14 items-center justify-center rounded-full bg-white">
                   <v.icon size={24} style={{ color: 'var(--color-brand)' }} />
                 </div>
                 <h3 className="font-heading text-lg font-bold text-foreground">{v.title}</h3>
