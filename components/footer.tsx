@@ -89,7 +89,7 @@ export default function Footer() {
               (text only)
             </p>
             <p>
-              Free, Compassionate and Confidential support:
+              Free, compassionate &amp; confidential support:
               <br />
               8am-10pm AEST, 7 days
             </p>
