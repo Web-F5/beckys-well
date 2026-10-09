@@ -7,17 +7,17 @@
   --font-sans: 'Lato', 'Lato Fallback', sans-serif;
   --font-heading: 'Nunito', 'Nunito Fallback', sans-serif;
 
-  /* Brand palette — Greige & Peach (client mockup) */
-  --color-brand: #3a3a3a;
+  /* Brand palette — Well Water, less green (level 2) + Lavender Mist accent */
+  --color-brand: #3c4b75;
   --color-brand-bg: #e5ddd0;
-  --color-brand-surface-dark: #bfaa97;
-  --color-brand-button: #fbc79f;
-  --color-brand-button-hover: #ffd6ae;
-  --color-brand-accent: #bfaa97;
-  --color-brand-accent-hover: #cbb9a8;
-  --color-brand-text-muted: #6b6b6b;
+  --color-brand-surface-dark: #3c4b75;
+  --color-brand-button: #3c4b75;
+  --color-brand-button-hover: #4c5d88;
+  --color-brand-accent: #51567a;
+  --color-brand-accent-hover: #666b8f;
+  --color-brand-text-muted: #51567a;
   --color-brand-surface-alt: #ddcfc1;
-  --color-brand-warm-pop: #fbc79f;
+  --color-brand-warm-pop: #d3d4ee;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -46,23 +46,23 @@
 :root {
   color-scheme: light;
   --background: #fbf6f0;
-  --foreground: #3a3a3a;
+  --foreground: #251f46;
   --card: #ffffff;
-  --card-foreground: #3a3a3a;
+  --card-foreground: #251f46;
   --popover: #ffffff;
-  --popover-foreground: #3a3a3a;
-  --primary: #fbc79f;
-  --primary-foreground: #3a3a3a;
+  --popover-foreground: #251f46;
+  --primary: #3c4b75;
+  --primary-foreground: #ffffff;
   --secondary: #e5ddd0;
-  --secondary-foreground: #3a3a3a;
+  --secondary-foreground: #3c4b75;
   --muted: #e5ddd0;
-  --muted-foreground: #6b6b6b;
+  --muted-foreground: #51567a;
   --accent: #e5ddd0;
-  --accent-foreground: #3a3a3a;
+  --accent-foreground: #3c4b75;
   --destructive: oklch(0.577 0.245 27.325);
   --border: #d6cdc3;
   --input: #d6cdc3;
-  --ring: #fbc79f;
+  --ring: #3c4b75;
   --radius: 1rem;
 }
 
