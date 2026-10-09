@@ -76,7 +76,8 @@ export default function Footer() {
           </h3>
           <div className="flex flex-col gap-3 text-sm leading-relaxed text-foreground">
             <p>
-              <span className="font-bold">Pregnancy Help Australia Helpline:</span>{' '}
+              <span className="font-bold">Pregnancy Help Australia Helpline:</span>
+              <br />
               <a href="tel:1300139313" className="font-bold underline">
                 1300 139 313
               </a>
