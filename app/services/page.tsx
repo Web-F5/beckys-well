@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const icons = [Compass, Sparkles, Users, HeartHandshake]
 
 const serviceImages = [
-  { src: '/images/girl-laptop.webp', alt: 'A woman looking thoughtfully at her laptop', width: 1920, height: 1080 },
+  { src: '/images/girl-laptop-black-pants.webp', alt: 'A woman looking thoughtfully at her laptop', width: 1920, height: 1080 },
   { src: '/images/Shell-on-beach.webp', alt: 'A delicate shell resting on the sand at sunset', width: 800, height: 1067 },
   { src: '/images/sunset-beach.webp', alt: 'A wide, calm horizon over the ocean at sunset', width: 1920, height: 1080 },
   { src: '/images/Girl-thinking-headphones.webp', alt: 'A woman resting quietly on a couch, wrapped in a blanket', width: 1920, height: 1080 },

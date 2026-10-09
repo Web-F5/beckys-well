@@ -1,5 +1,14 @@
+export type BlogImage = {
+  src: string
+  alt: string
+  width: number
+  height: number
+  position?: string
+}
+
 export type BlogPost = {
   slug: string
+  image: BlogImage
   title: string
   excerpt: string
   date: string
@@ -10,6 +19,12 @@ export type BlogPost = {
 export const blogPosts: BlogPost[] = [
   {
     slug: 'what-to-expect-first-appointment',
+    image: {
+      src: '/images/what-to-expect-at-your-first-appointment.webp',
+      alt: 'A calendar with an appointment circled in pink marker',
+      width: 1920,
+      height: 1080,
+    },
     title: 'What to Expect at Your First Appointment',
     excerpt:
       "Wondering what happens when you reach out to Becky's Well for the first time? Here's a gentle walk-through, so nothing feels unfamiliar.",
@@ -26,6 +41,13 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'coping-after-pregnancy-loss',
+    image: {
+      src: '/images/woman-at-stream.webp',
+      alt: 'A woman sitting quietly by a stream',
+      width: 800,
+      height: 1067,
+      position: '50% 25%',
+    },
     title: 'Coping After Pregnancy Loss: There Is No Right Way to Grieve',
     excerpt:
       'Miscarriage and pregnancy loss can bring grief that catches people off guard. A few gentle reminders for anyone navigating this right now.',
@@ -42,6 +64,12 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'understanding-your-options',
+    image: {
+      src: '/images/understanding-your-options.webp',
+      alt: 'Someone standing at a chalk arrow on the pavement that splits into two directions',
+      width: 1920,
+      height: 1080,
+    },
     title: 'Understanding Your Options: Adoption, Abortion and Parenting',
     excerpt:
       "An unplanned pregnancy can bring a flood of decisions all at once. Here's how we think about talking through your options, unhurried and without pressure.",

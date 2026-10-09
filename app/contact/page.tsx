@@ -124,6 +124,12 @@ export default function ContactPage() {
               resources. You can gently share our details with her so she can reach out whenever she&apos;s
               ready.
             </p>
+            <p>
+              We are one of many pregnancy support hubs across Australia. If you have found our website and
+              would like help to find a service closer to you, feel free to get in touch and we can help you
+              connect with someone closer to home.
+            </p>
+            <p>Pregnancy Help Australia has a list of services across Australia on their website.</p>
           </div>
         </div>
       </section>

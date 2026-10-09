@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Mail, MapPin, Phone, Share2 } from 'lucide-react'
-import { navLinks, org, serviceAreaTowns } from '@/lib/site-data'
+import { navLinks, org } from '@/lib/site-data'
 
 export default function Footer() {
   return (
@@ -61,22 +61,48 @@ export default function Footer() {
           >
             <Share2 size={15} /> Follow us on Facebook
           </a>
-        </div>
 
-        <div>
-          <h3 className="mb-5 font-heading text-sm font-bold uppercase tracking-widest text-[#3a3a3a]/90">
+          <h3 className="mb-3 mt-8 font-heading text-sm font-bold uppercase tracking-widest text-[#3a3a3a]/90">
             Areas We Serve
           </h3>
           <p className="text-sm leading-relaxed text-[#3a3a3a]/75">
-            {serviceAreaTowns.slice(0, 10).join(', ')} and surrounding areas within 30km of Shepparton.
+            Greater Shepparton and surrounding areas within 40&nbsp;km
           </p>
+        </div>
+
+        <div className="self-start rounded-2xl bg-[#fbf6f0] p-6 shadow-sm">
+          <h3 className="mb-4 font-heading text-sm font-bold uppercase tracking-widest text-[#3a3a3a]">
+            For immediate support
+          </h3>
+          <div className="flex flex-col gap-3 text-sm leading-relaxed text-[#3a3a3a]">
+            <p>
+              <span className="font-bold">Pregnancy Help Australia National Helpline:</span>{' '}
+              <a href="tel:1300139313" className="font-bold underline">
+                1300 139 313
+              </a>
+            </p>
+            <p>
+              Text:{' '}
+              <a href="sms:0483952605" className="font-bold underline">
+                0483 952 605
+              </a>{' '}
+              (text only)
+            </p>
+            <p>Free, Compassionate and Confidential support 8am-10pm AEST, 7 days</p>
+            <p>
+              If you need immediate support, Lifeline is available 24/7 on{' '}
+              <a href="tel:131114" className="font-bold underline">
+                13&nbsp;11&nbsp;14
+              </a>
+              .
+            </p>
+          </div>
         </div>
       </div>
 
       <div className="border-t border-[#3a3a3a]/15 px-4 py-5 md:px-8">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 text-xs text-[#3a3a3a]/60 sm:flex-row">
           <p>&copy; {new Date().getFullYear()} Becky&apos;s Well. All rights reserved.</p>
-          <p>If you need immediate support, Lifeline is available 24/7 on 13&nbsp;11&nbsp;14.</p>
         </div>
       </div>
     </footer>

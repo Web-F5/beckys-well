@@ -9,7 +9,7 @@ export const org = {
   region: 'Greater Shepparton, Victoria',
   membership: 'Pregnancy Help Australia',
   affiliation: 'Becky\'s Well is an affiliate of Pregnancy Help Australia (PHA) and Encounter Christian Church.',
-  facebook: 'https://www.facebook.com',
+  facebook: 'https://www.facebook.com/profile.php?id=61582307387153',
   founder: 'Hermes Valle Villanueva',
   hours: [
     { label: 'Monday – Friday', value: 'By appointment' },

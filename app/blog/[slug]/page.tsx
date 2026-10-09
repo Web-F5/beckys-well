@@ -2,8 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { ArrowLeft, Droplet } from 'lucide-react'
-import PlaceholderImage from '@/components/placeholder-image'
+import { ArrowLeft } from 'lucide-react'
 import CtaSection from '@/components/cta-section'
 import { blogPosts } from '@/lib/blog-posts'
 
@@ -36,17 +35,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           >
             <ArrowLeft size={15} /> Back to Blog
           </Link>
-          {post.slug === 'coping-after-pregnancy-loss' ? (
-            <Image
-              src="/images/woman-at-stream.webp"
-              alt="A woman sitting quietly by a stream"
-              width={800}
-              height={1067}
-              className="mb-8 aspect-[16/9] w-full rounded-3xl object-cover"
-            />
-          ) : (
-            <PlaceholderImage tone="soft" icon={Droplet} className="mb-8 aspect-[16/9] w-full" />
-          )}
+          <Image
+            src={post.image.src}
+            alt={post.image.alt}
+            width={post.image.width}
+            height={post.image.height}
+            style={{ objectPosition: post.image.position }}
+            className="mb-8 aspect-[16/9] w-full rounded-3xl object-cover"
+          />
           <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
             {new Date(post.date).toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })}
             {' · '}
