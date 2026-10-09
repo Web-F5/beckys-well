@@ -38,7 +38,7 @@ export default function HomePage() {
             </p>
           </div>
           <Image
-            src="/images/girl-with-cuppa.webp"
+            src="/images/girl-with-cuppa_02.webp"
             alt="A woman sitting by a window with a cup of tea, looking out thoughtfully"
             width={1920}
             height={1080}

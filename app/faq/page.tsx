@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import FaqAccordion from '@/components/faq-accordion'
 import CtaSection from '@/components/cta-section'
 import { faqs } from '@/lib/site-data'
@@ -37,6 +38,13 @@ export default function FaqPage() {
 
       <section className="px-4 py-16 md:px-8" style={{ backgroundColor: 'var(--color-brand-surface-alt)' }}>
         <div className="mx-auto max-w-3xl">
+          <Image
+            src="/images/man-with-phone.webp"
+            alt="A man sitting with his hand on his forehead, looking at his phone"
+            width={1920}
+            height={1080}
+            className="mb-8 aspect-[16/9] w-full rounded-3xl object-cover"
+          />
           <h2 className="mb-5 font-heading text-xl font-extrabold text-foreground">For Partners &amp; Men</h2>
           <FaqAccordion items={faqs.partners} />
         </div>
